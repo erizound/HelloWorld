@@ -9,7 +9,21 @@
 #pragma once
 
 #include <JuceHeader.h>
+struct Car
+{
+    struct Engine
+    {
+        bool isBroken;
+    };
 
+    char wheelBrand;
+    int wheelsSize;
+
+    Engine Coupe;
+
+    bool accelerate(Engine maximum, Engine minimum);
+
+};
 //==============================================================================
 /*
     This component lives inside our window, and this is where you should put all
